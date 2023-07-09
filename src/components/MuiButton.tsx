@@ -1,7 +1,31 @@
-import { Stack, Button, IconButton, ButtonGroup } from '@mui/material';
+import { useState } from 'react';
 import SendIcon from '@mui/icons-material/Send';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import {
+    Stack,
+    Button,
+    IconButton,
+    ButtonGroup,
+    ToggleButtonGroup,
+    ToggleButton,
+} from '@mui/material';
 
 const MuiButton = () => {
+    // const [formats, setFormats] = useState<string[]>([]); // this is without exclusive
+    const [formats, setFormats] = useState<string | null>(null); // this is with exclusive
+
+    console.log({ formats });
+
+    const handleFormatChange = (
+        _event: React.MouseEvent<HTMLElement>,
+        // updatedFormats: string[] // this is without exclusive
+        updatedFormats: string | null
+    ) => {
+        setFormats(updatedFormats);
+    };
+
     return (
         <Stack spacing={4}>
             <Stack spacing={2} direction="row">
@@ -123,6 +147,27 @@ const MuiButton = () => {
                     <Button>Center</Button>
                     <Button>Right</Button>
                 </ButtonGroup>
+            </Stack>
+            <Stack direction="row">
+                <ToggleButtonGroup
+                    aria-label="text-formatting"
+                    value={formats}
+                    onChange={handleFormatChange}
+                    size="small"
+                    color="success"
+                    orientation="horizontal"
+                    exclusive
+                >
+                    <ToggleButton value="bold" aria-label="bold">
+                        <FormatBoldIcon />
+                    </ToggleButton>
+                    <ToggleButton value="italic" aria-label="italic">
+                        <FormatItalicIcon />
+                    </ToggleButton>
+                    <ToggleButton value="underlined" aria-label="underlined">
+                        <FormatUnderlinedIcon />
+                    </ToggleButton>
+                </ToggleButtonGroup>
             </Stack>
         </Stack>
     );
