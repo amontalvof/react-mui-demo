@@ -1,5 +1,6 @@
 import './App.css';
-import MuiStack from './components/MuiStack';
+import MuiGrid from './components/MuiGrid';
+// import MuiStack from './components/MuiStack';
 // import MuiBox from './components/MuiBox';
 // import MuiAutocomplete from './components/MuiAutocomplete';
 // import MuiRating from './components/MuiRating';
@@ -14,7 +15,7 @@ import MuiStack from './components/MuiStack';
 function App() {
     return (
         <div className="App">
-            <MuiStack />
+            <MuiGrid />
         </div>
     );
 }
