@@ -1,5 +1,6 @@
 import './App.css';
-import MuiCard from './components/MuiCard';
+import MuiAccordion from './components/MuiAccordion';
+// import MuiCard from './components/MuiCard';
 // import MuiPaper from './components/MuiPaper';
 // import MuiGrid from './components/MuiGrid';
 // import MuiStack from './components/MuiStack';
@@ -17,7 +18,7 @@ import MuiCard from './components/MuiCard';
 function App() {
     return (
         <div className="App">
-            <MuiCard />
+            <MuiAccordion />
         </div>
     );
 }
