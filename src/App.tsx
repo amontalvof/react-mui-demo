@@ -1,5 +1,6 @@
 import './App.css';
-import MuiAccordion from './components/MuiAccordion';
+import MuiImageList from './components/MuiImageList';
+// import MuiAccordion from './components/MuiAccordion';
 // import MuiCard from './components/MuiCard';
 // import MuiPaper from './components/MuiPaper';
 // import MuiGrid from './components/MuiGrid';
@@ -18,7 +19,7 @@ import MuiAccordion from './components/MuiAccordion';
 function App() {
     return (
         <div className="App">
-            <MuiAccordion />
+            <MuiImageList />
         </div>
     );
 }
