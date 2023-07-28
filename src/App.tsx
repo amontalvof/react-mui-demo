@@ -1,5 +1,6 @@
 import './App.css';
-import MuiNavbar from './components/MuiNavbar';
+import MuiMenu from './components/MuiMenu';
+// import MuiNavbar from './components/MuiNavbar';
 // import MuiImageList from './components/MuiImageList';
 // import MuiAccordion from './components/MuiAccordion';
 // import MuiCard from './components/MuiCard';
@@ -20,7 +21,7 @@ import MuiNavbar from './components/MuiNavbar';
 function App() {
     return (
         <div className="App">
-            <MuiNavbar />
+            <MuiMenu />
         </div>
     );
 }
