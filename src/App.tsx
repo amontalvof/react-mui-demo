@@ -1,5 +1,6 @@
 import './App.css';
-import MuiTooltip from './components/MuiTooltip';
+import MuiTable from './components/MuiTable';
+// import MuiTooltip from './components/MuiTooltip';
 // import MuiChip from './components/MuiChip';
 // import MuiList from './components/MuiList';
 // import MuiBadge from './components/MuiBadge';
@@ -31,7 +32,7 @@ import MuiTooltip from './components/MuiTooltip';
 function App() {
     return (
         <div className="App">
-            <MuiTooltip />
+            <MuiTable />
         </div>
     );
 }
