@@ -1,5 +1,6 @@
 import './App.css';
-import MuiSkeleton from './components/MuiSkeleton';
+import MuiLoadingButton from './components/MuiLoadingButton';
+// import MuiSkeleton from './components/MuiSkeleton';
 // import MuiProgress from './components/MuiProgress';
 // import MuiDialog from './components/MuiDialog';
 // import MuiSnackbar from './components/MuiSnackbar';
@@ -37,7 +38,7 @@ import MuiSkeleton from './components/MuiSkeleton';
 function App() {
     return (
         <div className="App">
-            <MuiSkeleton />
+            <MuiLoadingButton />
         </div>
     );
 }
