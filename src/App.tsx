@@ -1,5 +1,8 @@
 import './App.css';
-import MuiLoadingButton from './components/MuiLoadingButton';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import MuiPicker from './components/MuiPicker';
+// import MuiLoadingButton from './components/MuiLoadingButton';
 // import MuiSkeleton from './components/MuiSkeleton';
 // import MuiProgress from './components/MuiProgress';
 // import MuiDialog from './components/MuiDialog';
@@ -37,9 +40,11 @@ import MuiLoadingButton from './components/MuiLoadingButton';
 
 function App() {
     return (
-        <div className="App">
-            <MuiLoadingButton />
-        </div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <div className="App">
+                <MuiPicker />
+            </div>
+        </LocalizationProvider>
     );
 }
 
