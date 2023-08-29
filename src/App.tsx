@@ -1,7 +1,8 @@
 import "./App.css";
 
+import MuiTimeline from "./components/MuiTimeline";
 // import MuiTabs from "./components/MuiTabs";
-import MuiRangePicker from "./components/MuiRangePicker";
+// import MuiRangePicker from "./components/MuiRangePicker";
 // import MuiPicker from "./components/MuiPicker";
 // import MuiLoadingButton from "./components/MuiLoadingButton";
 // import MuiSkeleton from "./components/MuiSkeleton";
@@ -44,7 +45,7 @@ import MuiRangePicker from "./components/MuiRangePicker";
 function App() {
     return (
         <div className="App">
-            <MuiRangePicker />
+            <MuiTimeline />
         </div>
     );
 }
