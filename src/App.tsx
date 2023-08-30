@@ -1,6 +1,7 @@
 import "./App.css";
 
-import MuiTimeline from "./components/MuiTimeline";
+import MuiMasonry from "./components/MuiMasonry";
+// import MuiTimeline from "./components/MuiTimeline";
 // import MuiTabs from "./components/MuiTabs";
 // import MuiRangePicker from "./components/MuiRangePicker";
 // import MuiPicker from "./components/MuiPicker";
@@ -45,7 +46,7 @@ import MuiTimeline from "./components/MuiTimeline";
 function App() {
     return (
         <div className="App">
-            <MuiTimeline />
+            <MuiMasonry />
         </div>
     );
 }
