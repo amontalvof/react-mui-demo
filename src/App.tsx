@@ -1,3 +1,4 @@
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 import "./App.css";
 
 import MuiResponsiveness from "./components/MuiResponsiveness";
@@ -44,10 +45,28 @@ import MuiResponsiveness from "./components/MuiResponsiveness";
 
 // import Test from "./components/Test";
 
+const theme = createTheme({
+    status: {
+        danger: "#e53e3e",
+    },
+    palette: {
+        secondary: {
+            main: colors.orange[500],
+        },
+        // @ts-ignore
+        neutral: {
+            main: colors.grey[500],
+            darker: colors.grey[700],
+        },
+    },
+});
+
 function App() {
     return (
         <div className="App">
-            <MuiResponsiveness />
+            <ThemeProvider theme={theme}>
+                <MuiResponsiveness />
+            </ThemeProvider>
         </div>
     );
 }
